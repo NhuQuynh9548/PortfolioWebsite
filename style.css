@@ -4,3 +4,87 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  color: #ededed;
+  background: #02253e; /* Thay đổi màu nền */
+}
+/* ----- Header ----- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10%;
+  background: #081b29; /* Thay đổi màu nền header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10%;
+  background: #081b29; /* Thay đổi màu nền header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+.logo {
+  position: relative;
+  font-size: clamp(20px, 2vw, 30px);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: clamp(10px, 3vw, 30px);
+  flex: 1;
+  min-width: 300px;
+}
+.navbar a {
+  display: inline-block;
+  font-size: clamp(15px, 1.5vw, 25px);
+  color: #fff; /* Thay đổi màu chữ */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  white-space: nowrap;
+}
+.navbar a:hover {
+  color: #0ef; /* Thay đổi màu chữ khi hover */
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
