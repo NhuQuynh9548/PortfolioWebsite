@@ -861,18 +861,18 @@ background: linear-gradient(135deg, #fce9f1, #e7e9fc, #fff5b8);
 .contact-form input,
 .contact-form textarea {
   padding: 12px 16px;
-  border: none;
+  border: solid 2px;
   outline: none;
   border-radius: 6px;
-  background: #1e293b; /* ô nhập tối nhẹ */
-  color: #f1f5f9;
+  background: none; /* ô nhập tối nhẹ */
+  color: #dd78b6;
   font-size: 16px;
   transition: 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  box-shadow: 0 0 8px #a78bfa; /* glow tím pastel thay vì neon xanh */
+  box-shadow: 0 0 8px #350dab; /* glow tím pastel thay vì neon xanh */
 }
 
 .contact-form textarea {
