@@ -458,13 +458,13 @@ body {
   width: 85%;
 }
 .progress-line.sketch span {
-  width: 80%;
+  width: 70%;
 }
 .progress-line.sql span {
-  width: 75%;
+  width: 85%;
 }
 .progress-line.jira span {
-  width: 90%;
+  width: 60%;
 }
 .progress-line.selenium span {
   width: 70%;
@@ -490,13 +490,13 @@ body {
   content: "85%";
 }
 .progress-line.sketch span::after {
-  content: "80%";
+  content: "70%";
 }
 .progress-line.sql span::after {
-  content: "75%";
+  content: "85%";
 }
 .progress-line.jira span::after {
-  content: "90%";
+  content: "60%";
 }
 .progress-line.selenium span::after {
   content: "70%";
